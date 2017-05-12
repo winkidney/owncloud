@@ -2,8 +2,8 @@
 
 DOCKER_RUN_OPTIONS ?= --env "TZ=Europe/Berlin"
 
-docker_owncloud_http_port    ?= 80
-docker_owncloud_https_port   ?= 443
+docker_owncloud_http_port    ?= 127.0.0.1:1180
+docker_owncloud_https_port   ?= 127.0.0.1:11443
 docker_owncloud_in_root_path ?= 1
 docker_owncloud_permanent_storage ?= /var/lib/jchaney/owncloud
 docker_owncloud_ssl_cert ?= /etc/ssl/certs/ssl-cert-snakeoil.pem
